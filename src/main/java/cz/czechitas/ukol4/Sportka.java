@@ -3,6 +3,7 @@ package cz.czechitas.ukol4;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Třída pro losování Sportky.
@@ -13,10 +14,9 @@ public class Sportka {
   public Sportka() {
     //TODO naplnit osudí čísly 1 až 49.
 
-    private void naplnOsudi() {
       for (int i = 1; i < 49; i++) {
         osudi.add(i);
-      }
+
           }
   }
 
@@ -28,7 +28,8 @@ public class Sportka {
   public void zamichat() {
     //TODO zamíchat osudí
 
-Collections.shuffle(osudi);
+    Collections.shuffle(osudi);
+    //using Random() method -> Collections.shuffle(osudi, new Random());
 
   }
 
