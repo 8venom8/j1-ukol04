@@ -16,8 +16,8 @@ public class Sportka {
 
       for (int i = 1; i < 49; i++) {
         osudi.add(i);
-
           }
+      System.out.println("Cisla od 1-49 " + osudi);
   }
 
   /**
@@ -30,7 +30,7 @@ public class Sportka {
 
     Collections.shuffle(osudi);
     //using Random() method -> Collections.shuffle(osudi, new Random());
-
+    System.out.println("Zamichani prvniho tahu: " + osudi);
   }
 
   /**
@@ -42,7 +42,9 @@ public class Sportka {
    */
   public List<Integer> vylosovanaCisla() {
     //TODO Vrátit seznam prvních 6 čísel z osudí.
-    return null;
+
+    List<Integer> prvnichSest = osudi.subList(0, 6);
+    return prvnichSest;
   }
 
   /**
@@ -52,6 +54,6 @@ public class Sportka {
    */
   public Integer dodatkoveCislo() {
     //TODO Vrátit sedmé číslo z osudí.
-    return null;
+    return osudi.get(6);
   }
 }
