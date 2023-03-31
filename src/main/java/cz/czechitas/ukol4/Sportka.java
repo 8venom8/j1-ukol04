@@ -28,7 +28,6 @@ public class Sportka {
     //TODO zamíchat osudí
 
     Collections.shuffle(osudi);
-    System.out.println("Zamichani prvniho tahu: " + osudi);
   }
 
   /**
@@ -40,8 +39,6 @@ public class Sportka {
    */
   public List<Integer> vylosovanaCisla() {
     //TODO Vrátit seznam prvních 6 čísel z osudí.
-
-    List<Integer> prvnichSest = osudi.subList(0, 6);
 
     return osudi.subList(0, 6);
   }
